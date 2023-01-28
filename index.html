@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wicked Weather</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="normalize.css">
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <h1>Wicked Weather</h1>
-    <h2>The Worlds Favorite Forecast</h2>
-    <form>
-        <label for="input"><span aria-label="required"></span></label>
-        <input id="input" type="text" name="input" placeholder="city name" required>
-        <button type="submit">Search</button>
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
-    </form>
-    <div class="weather-container"></div>
+    <div id="top">
+        <h1>Wicked Weather</h1>
+        <h2>The Worlds Favorite Forecast</h2>
+    </div>
+    <div id="main">
+        <form>
+            <label for="input"><span aria-label="required"></span></label>
+            <input id="input" type="text" name="input" placeholder="city name" required>
+            <button type="submit">Search</button>
+            <span>Metric</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </form>
+        <div class="weather-container"></div>
+    </div>
 </body>
 </html>

@@ -2,8 +2,34 @@
 
 body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: rgb(32, 32, 32);
 }
+
+#top {
+    background-color: rgb(7, 68, 154);
+    padding: 3px;
+    height: 20vh;
+}
+
+#main {
+    background-color: rgb(57, 87, 36);
+    height: 80vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Unit Switch */
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
