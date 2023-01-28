@@ -5,14 +5,28 @@ body {
 }
 
 #top {
-    background-color: rgb(7, 68, 154);
-    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196F3;
+    padding: 30px;
     height: 20vh;
 }
 
 #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(57, 87, 36);
     height: 80vh;
+    padding: 20px;
+}
+
+form {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
 }
 
 

@@ -8,29 +8,18 @@ let units = 'imperial'
 
 async function findWeather(cityName) {
         
-    try {
-        
-        const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' 
-        + cityName 
-        + '&appid=e37d4ef1a74a626d446d214d6d697470' 
-        + '&units='
-        + units,
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' 
+    + cityName 
+    + '&appid=e37d4ef1a74a626d446d214d6d697470' 
+    + '&units='
+    + units, {mode: 'cors'})
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(response) {
+      console.log(response);
+    });
 
-        {
-            mode: 'cors'
-        })
-    
-        const data = await response.json(); {
-           return console.log(response)
-        }
-
-        
-    } catch(error){
-
-        console.error('There has been a problem with your fetch operation:', error);
-    
-    };
-    
 }
 
 button.addEventListener('click', function() {
@@ -55,4 +44,5 @@ unitSwitch.addEventListener('click', function() {
     else {
         units = 'imperial'
     }
+
 });
