@@ -3,12 +3,18 @@ const form = document.querySelector('form')
 const input = document.querySelector('input');
 
 let cityName;
+let units = 'imperial'
 
 async function findWeather(cityName) {
         
     try {
         
-        const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=5b07045727136f2d4786580716e3cdd0',
+        const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' 
+        + cityName 
+        + '&appid=e37d4ef1a74a626d446d214d6d697470' 
+        + '&units='
+        + units,
+        
         {
             mode: 'cors'
         })
