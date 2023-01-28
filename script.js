@@ -1,8 +1,9 @@
 const button = document.querySelector('button');
 const form = document.querySelector('form')
 const input = document.querySelector('input');
+const unitSwitch = document.querySelector('.switch')
 
-let cityName;
+let cityName = 'boston';
 let units = 'imperial'
 
 async function findWeather(cityName) {
@@ -14,7 +15,7 @@ async function findWeather(cityName) {
         + '&appid=e37d4ef1a74a626d446d214d6d697470' 
         + '&units='
         + units,
-        
+
         {
             mode: 'cors'
         })
@@ -44,4 +45,14 @@ button.addEventListener('click', function() {
 
     findWeather(cityName);
 
+});
+
+unitSwitch.addEventListener('click', function() {
+
+    if(units == 'imperial') {
+        units = 'metric'        
+    }
+    else {
+        units = 'imperial'
+    }
 });
