@@ -20,6 +20,8 @@ async function findWeather(cityName) {
       console.log(response);
     });
 
+    console.log(units)
+
 }
 
 button.addEventListener('click', function() {
@@ -44,5 +46,6 @@ unitSwitch.addEventListener('click', function() {
     else {
         units = 'imperial'
     }
+    console.log(units)
 
 });

@@ -11,19 +11,26 @@
 </head>
 <body>
     <div id="top">
-        <h1>Wicked Weather</h1>
-        <h2>The Worlds Favorite Forecast</h2>
+        <div>
+            <img src="./sunny-outline.svg">
+            <h1>Wicked Weather</h1>
+        </div>
+        <h3>"the worlds favorite forecast"</h3>
     </div>
     <div id="main">
         <form>
-            <label for="input"><span aria-label="required"></span></label>
-            <input id="input" type="text" name="input" placeholder="city name" required>
-            <button type="submit">Search</button>
-            <span>Metric</span>
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
+            <div>
+                <label for="input"><span aria-label="required"></span></label>
+                <input id="input" type="text" name="input" placeholder="city name" required>
+                <button type="submit">search</button>
+            </div>
+            <div id="switch">
+                <span>metric</span>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
         </form>
         <div class="weather-container"></div>
     </div>
