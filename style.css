@@ -78,6 +78,7 @@ input {
   background-color: var(--secondary);
   color: var(--primary);
   border: none;
+  width: 240px;
 }
 
 button {
@@ -87,24 +88,45 @@ button {
   border: none;
 }
 
+.weather-container {
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  background-color: var(--secondary);
+  color: var(--primary);
+  border-radius: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.weather-container > h2 {
+  margin-top: 0;
+}
+.weather-container > img {
+  height: 150px;
+  width: 150px;
+}
 
-
+.weather-container > p {
+  margin: 10px;
+}
 
 
 
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: var(--secondary);
+  color: var(--primary);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 /* Unit Switch */
