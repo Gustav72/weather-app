@@ -28,30 +28,30 @@ try {
         let temperature = document.createElement('p');
         let weatherImg = document.createElement('img')
         let weather = document.createElement('p');
-        let feelsLike = document.createElement('p');
-        let humidity = document.createElement('p')
 
         name.innerHTML = response.name;
-        temperature.innerHTML = response.main.temp;
+        temperature.innerHTML = `${response.main.temp} °F`;
         weatherImg.src = `http://openweathermap.org/img/wn/${response.weather[0].icon}@2x.png`
         weather.innerHTML = response.weather[0].description;
-        feelsLike.innerHTML = response.main.feels_like;
-        humidity.innerHTML = response.main.humidity;
-        
-
 
         container.appendChild(name)
         container.appendChild(temperature)
         container.appendChild(weatherImg)
         container.appendChild(weather)
-        container.appendChild(feelsLike)
-        container.appendChild(humidity)
 
         console.log(response)
     });
 }
 catch(error) {
-    alert(error);
+
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+
+    let err = document.createElement('h2');
+    err.innerHTML = 'Please Try Again Later';
+    container.appendChild(err)
+
 }
 }   
 
@@ -66,3 +66,5 @@ button.addEventListener('click', function() {
     findWeather(cityName);
 
 });
+
+findWeather('boston');
