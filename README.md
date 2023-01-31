@@ -16,7 +16,7 @@ Project from [The Odin Project](https://www.theodinproject.com/)
 
 ### Overview
 
-This simple project utilizes the OpenWeatherMap API to search for current weather in a city of your choice with a free API key. Current temperature, weather icon, and wether description is displayed
+This simple project utilizes the OpenWeatherMap API to search for current weather in a city of your choice with a free API key. Current temperature, weather icon, and wether description is displayed.
 
 ![Screenshot of User Interface](./screenshot.png)
 
